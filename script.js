@@ -12,7 +12,7 @@ function createElementDom(tag, id) {
 }
 
 function clearBox(elementID) {
-  // document.getElementById(elementID).innerHTML = "";
+  document.getElementById(elementID).innerHTML = "";
   // elementID.removeChild(elementID.firstChild);
   // document.getElementById(elementID).replaceChildren();
 
@@ -37,7 +37,7 @@ function showCategory(items, div, type1, bgc) {
     div.append(p);
 
     p.addEventListener("click", e => {
-      clearBox("#divSecond");
+      clearBox("divSecond");
       showCategory(items[i].subCategory, divSecond, "subCategory", "aqua");
     })
   }
